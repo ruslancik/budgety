@@ -138,7 +138,7 @@ return {
 
 })();
 
-//GLOBAL APP CONTROLLER
+// GLOBAL APP CONTROLLER
 var controller = (function( budgetCtrl, UICtrl){
 
 
@@ -180,7 +180,9 @@ var controller = (function( budgetCtrl, UICtrl){
     
     // 1. Calculate the budgets
 
+
     // 2. Return the budget
+    
     
     // 3. Display the budget
 
