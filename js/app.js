@@ -175,6 +175,14 @@ return {
 
     },
 
+    deteteListItem : function(selectorID){
+
+        var el = document.getElementById(selectorID);
+
+        el.parentNode.removeChild(el);
+
+    },
+
     clearFields : function(){
         var fields;
 
@@ -260,8 +268,10 @@ var controller = (function( budgetCtrl, UICtrl){
             // 1. Delete the items from data structure
             budgetCtrl.deleteItem(type, ID);
             // 2. Delete the items from UI
-
+            UICtrl.deteteListItem(itemID);
             // 3. Update and display the new budget
+            updateBudget();
+
         }
     }
 
